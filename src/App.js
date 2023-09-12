@@ -29,7 +29,7 @@ function App() {
 
   const call = async() => {
     try{
-    const res = await axios.post("http://localhost:4000",{headers : {"Content-Type":"application/json"}})
+    const res = await axios.post(`${process.env.REACT_APP_API_URL}`,{headers : {"Content-Type":"application/json"}})
     setWebsites(res.data)
     }
     catch(err){
@@ -38,6 +38,7 @@ function App() {
   }
 
   useEffect(() => {
+    console.log(process.env.REACT_APP_API_URL);
     call()
   },[])
   return (
