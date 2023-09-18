@@ -46,14 +46,6 @@ function App() {
     <div>
        
     <div className='mx-auto d-flex justify-content-center mt-2'> 
-    <div className="btn-group" role="group" aria-label="Basic example">
-    <select className='form-control w-25' ref={ipRef}>
-    <option value="https://">https://</option>
-    <option value="http://">http://</option>
-    <option value="">IP Address</option>
-    </select>
-    <form className='d-flex' onSubmit={handleSubmit}><input ref={inputRef} className='form-control' type='text' required/><button className='btn btn-primary mx-3' type='submit'>ADD</button></form>
-    </div>
     </div>
     <div className='d-flex justify-content-center'>
     <div>
